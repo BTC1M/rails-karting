@@ -20,3 +20,7 @@
 //= require magnific-popup/jquery.magnific-popup.min
 //= require jquery.singlePageNav.min
 //= require bootstrap.min
+
+//= require jquery3
+//= require popper
+//= require bootstrap
