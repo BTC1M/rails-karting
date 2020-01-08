@@ -21,6 +21,7 @@
 //= require jquery.singlePageNav.min
 //= require bootstrap.min
 
-//= require jquery3
-//= require popper
-//= require bootstrap
+// Bug de front lorsqu'on importe bootstrap (pour le JS)
+// require jquery3
+// require popper
+// require bootstrap
