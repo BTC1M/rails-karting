@@ -1,14 +1,14 @@
 <!-- Accueil section -->
 <section id="accueil" class="text-white tm-font-big tm-parallax">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+  <nav class="navbar navbar-expand-lg tm-navbar" id="tmNav">
     <div class="container">
       <div class="tm-next">
         <%= link_to '#accueil' do %>
           <%= image_tag('logo1.png', class: "navbar-brand logo") %>
+          <%= image_tag('img9.jpg', class: "navbar-brand logo-etire") %>
+          <%= image_tag('img10.png', class: "navbar-brand logo logo-masque") %>
         <% end %>
-        <%#= image_tag('logo1.png', class: "navbar-brand logo") %>
-        <!-- <a href="#accueil" class="navbar-brand btn btn-outline-dark">Accueil</a> -->
       </div>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,16 +17,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#infos">Infos</a>
+              <a class="nav-link tm-nav-link" href="#infos">&nbsp;Infos&nbsp;</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#galerie">Galerie</a>
+              <a class="nav-link tm-nav-link" href="#galerie">&nbsp;Galerie&nbsp;</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#horaires">Horaires & Tarifs</a>
+              <a class="nav-link tm-nav-link" href="#horaires">&nbsp;Horaires & Tarifs&nbsp;</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#contact">Contact</a>
+              <a class="nav-link tm-nav-link" href="#contact">&nbsp;Contact&nbsp;</a>
           </li>
         </ul>
       </div>
@@ -130,7 +130,7 @@
                       <!-- <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('img1.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Dreamy <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -139,7 +139,7 @@
                       <!-- <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('img6.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Second <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -148,7 +148,7 @@
                       <!-- <img src="img/gallery-tn-03.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('gallery-tn-03.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Third <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -157,7 +157,7 @@
                       <!-- <img src="img/gallery-tn-04.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('gallery-tn-04.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Dreamy <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -166,7 +166,7 @@
                       <!-- <img src="img/gallery-tn-05.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('gallery-tn-05.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Fifth <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -175,7 +175,7 @@
                       <!-- <img src="img/gallery-tn-06.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('gallery-tn-06.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Sixth <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -184,7 +184,7 @@
                       <!-- <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('gallery-tn-01.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Dreamy <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -193,7 +193,7 @@
                       <!-- <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid"> -->
                       <%= image_tag('gallery-tn-02.jpg', alt: "Image", class: "img-fluid") %>
                       <figcaption>
-                        <h2><i>Eighth <span>Honey</span> Now</i></h2>
+                        <i>Cliquez pour aggrandir</i>
                       </figcaption>
                     </figure>
                   </a>
@@ -202,6 +202,12 @@
         </div>
       </div>
   </div>
+</section>
+
+<!-- Horaires & Tarifs -->
+<section id="horaires" class="tm-section-pad-top">
+  <h2 class="tm-text-primary tm-section-title mb-4">Section Horaires & Tarifs à ajouter ici</h2>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </section>
 
 <!-- Contact -->
@@ -249,9 +255,7 @@
   </div>
   <footer class="text-center small tm-footer">
       <p class="mb-0">
-        Copyright &copy; 2019 Company Name
-
-        - Design: <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
+        Copyright &copy; 2020 - NE PAS OUBLIER D'INTEGRER CHATBOX avec CRISP (Comme sur forposterity)
       </p>
     </footer>
 </section>
@@ -329,8 +333,10 @@
     $(window).scroll(function(e){
       if($(document).scrollTop() > 120) {
         $('.tm-navbar').addClass("scroll");
+        $('.tm-nav-link').addClass("scroll");
       } else {
         $('.tm-navbar').removeClass("scroll");
+        $('.tm-nav-link').removeClass("scroll");
       }
     });
 

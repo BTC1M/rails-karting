@@ -97,7 +97,6 @@ a:focus {
 }
 
 .tm-nav-link {
-  /*color: white;*/
   color: #3B490F;
   font-weight: bold;
 }
@@ -175,7 +174,14 @@ a:focus {
     background-position: center -400px;
   }
   .tm-nav-link {
-    color: white;
+    color: #3B490F;
+    border:2px solid #3B490F;
+    background: #E1E6ED;
+  }
+  .tm-nav-link.scroll {
+    color: #3B490F;
+    border: none;
+    background: none;
   }
   .navbar-brand {
     color: white;
@@ -187,8 +193,14 @@ a:focus {
     background-position: center -450px;
   }
   .tm-nav-link {
-    color: white;
-    font-weight: bold;
+    color: #3B490F;
+    border:2px solid #3B490F;
+    background: #E1E6ED;
+  }
+  .tm-nav-link.scroll {
+    color: #3B490F;
+    border: none;
+    background: none;
   }
   .navbar-brand {
     color: white;
@@ -197,6 +209,11 @@ a:focus {
 
 .logo {
   width: 60px;
+  height: 60px;
+}
+
+.logo-etire {
+  width: 160px;
   height: 60px;
 }
 
@@ -415,7 +432,7 @@ figure.effect-honey figcaption::before {
   transform: translate3d(0, 10px, 0);
 }
 
-figure.effect-honey h2 {
+figure.effect-honey i {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -426,24 +443,19 @@ figure.effect-honey h2 {
   transform: translate3d(0, -30px, 0);
 }
 
-figure.effect-honey h2 i {
+figure.effect-honey i {
   font-style: normal;
   opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);
-}
+  }
 
 figure.effect-honey figcaption::before,
-figure.effect-honey h2 {
+figure.effect-honey i {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
 
 figure.effect-honey:hover figcaption::before,
-figure.effect-honey:hover h2,
-figure.effect-honey:hover h2 i {
+figure.effect-honey:hover i {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -543,6 +555,12 @@ figure.effect-honey:hover h2 i {
 
 p {
   line-height: 1.9;
+}
+
+@media (max-width: 450px) {
+  .logo-masque {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
