@@ -129,37 +129,48 @@ a:focus {
   color: #8f8f8f;
 }
 
-/* Hero */
+/* Accueil */
 
-#hero {
+#accueil {
   /*background-image: url(../img/the-town-bg-01.jpg);*/
-  background-image: url(https://www.zupimages.net/up/20/02/o1ar.jpg);
+  /*background-image: url(https://www.zupimages.net/up/20/02/o1ar.jpg);*/
+  /*https://zupimages.net/up/20/02/44nq.png*/ /*NOK*/
+  /*https://zupimages.net/up/20/02/rits.jpg*/ /*OK*/
+  /*https://zupimages.net/up/20/02/4s15.jpg*/ /*OK*/
+  /*https://zupimages.net/up/20/02/19n1.jpg*/ /*OK*/
+  /*https://zupimages.net/up/20/02/k2dx.jpg*/ /*NOK*/
+  /*https://zupimages.net/up/20/02/g5qf.jpg*/ /*OK - plage*/
+  /*https://zupimages.net/up/20/02/p78n.jpg*/ /**/
+  background-image: url(https://zupimages.net/up/20/02/x2dy.png);
+  /*background-image: url(https://zupimages.net/up/20/02/f4vb.jpg);*/
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
+  /*background-size: cover;*/
+  /*opacity : 1;*/
   position: relative;
 }
 
 @media (min-height: 830px) {
-  #hero {
+  #accueil {
     background-position: center -210px;
   }
 }
 
 @media (min-height: 680px) and (max-height: 829px) {
-  #hero {
+  #accueil {
     background-position: center -300px;
   }
 }
 
 @media (min-height: 500px) and (max-height: 679px) {
-  #hero {
+  #accueil {
     background-position: center -400px;
   }
 }
 
 @media (max-height: 499px) {
-  #hero {
+  #accueil {
     background-position: center -450px;
   }
 }
