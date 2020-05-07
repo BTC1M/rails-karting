@@ -157,8 +157,8 @@ a:focus {
   /*https://zupimages.net/up/20/02/6je2.png amélioré opacité 90%*/
   /*https://zupimages.net/up/20/02/fp5q.png coloré*/
   /*https://zupimages.net/up/20/02/bz5u.png coloré opacité 90%*/
-
-  background-image: url(https://zupimages.net/up/20/02/6je2.png);
+  /*background-image: url(https://zupimages.net/up/20/02/6je2.png);*/
+  background-image: url(asset_path("opacity-90.jpg"));
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -543,8 +543,9 @@ figure.effect-honey:hover i {
   /*sky 1920*1280 80% transparence*/
   /*background-image: url(https://zupimages.net/up/20/19/9f52.jpg);*/
   /*sky 1920*1280 80% transparence format PNG*/
-  background-image: url(https://zupimages.net/up/20/19/al1w.png);
+  /*background-image: url(https://zupimages.net/up/20/19/al1w.png);*/
 
+  background-image: url(asset_path("sky-1920x1280-80transparency.jpg"));
   color: black;
   background-position: center;
   background-repeat: no-repeat;
