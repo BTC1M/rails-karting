@@ -72,8 +72,12 @@ a:focus {
   transition: all 0.3s ease;
 }
 
+.navbar-nav {
+  text-align: right;
+}
+
 .tm-navbar.scroll {
-  background-color: white; /* C'est ici qu'on change la couleur de la navbar */
+  background-color: white; /* Couleur de la navbar */
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -103,6 +107,11 @@ a:focus {
 
 .tm-navbar.scroll .tm-nav-link {
   color: #8f8f8f;
+}
+
+.tm-nav-link.scroll {
+  border: none;
+  background: none;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
@@ -174,21 +183,6 @@ a:focus {
   #accueil {
     background-position: center -400px;
   }
-  .tm-nav-link {
-    color: #3B490F;
-    border-top:2px solid #3B490F;
-    border-bottom:2px solid #3B490F;
-    border-left:2px solid #3B490F;
-    background: #E1E6ED;
-  }
-  .tm-nav-link-last {
-    border-right:2px solid #3B490F;
-  }
-  .tm-nav-link.scroll {
-    color: #3B490F;
-    border: none;
-    background: none;
-  }
   .navbar-brand {
     color: white;
   }
@@ -198,20 +192,81 @@ a:focus {
   #accueil {
     background-position: center -450px;
   }
-  .tm-nav-link {
-    color: #3B490F;
-    border:2px solid #3B490F;
-    background: #E1E6ED;
-  }
-  .tm-nav-link.scroll {
-    color: #3B490F;
-    border: none;
-    background: none;
-  }
   .navbar-brand {
     color: white;
   }
 }
+
+/* -------- START : tm-nav-link --------*/
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 992px) and (min-height: 681px) {
+  .tm-nav-link {
+    border-top:2px solid #3B490F;
+    border-left:2px solid #3B490F;
+    border-right:2px solid #3B490F;
+    background: #E1E6ED;
+  }
+  .tm-nav-link-last {
+    border-bottom:2px solid #3B490F;
+  }
+}
+
+@media (min-width: 992px) and (min-height: 499px) and (max-height: 681px) {
+  .tm-nav-link {
+    border-top:2px solid #3B490F;
+    border-bottom:2px solid #3B490F;
+    border-left:2px solid #3B490F;
+    background: #E1E6ED;
+  }
+  .tm-nav-link-last {
+    border-right:2px solid #3B490F;
+  }
+}
+
+@media (max-width: 992px) and (max-height: 681px) {
+  .tm-nav-link {
+    border-top:2px solid #3B490F;
+    border-left:2px solid #3B490F;
+    border-right:2px solid #3B490F;
+    background: #E1E6ED;
+  }
+  .tm-nav-link-last {
+    border-bottom:2px solid #3B490F;
+  }
+}
+
+@media (min-width: 992px) and (max-height: 499px) {
+  .tm-nav-link {
+    border-top:2px solid #3B490F;
+    border-bottom:2px solid #3B490F;
+    border-left:2px solid #3B490F;
+    background: #E1E6ED;
+  }
+  .tm-nav-link-last {
+    border-right:2px solid #3B490F;
+  }
+}
+
+@media (max-width: 992px) and (max-height: 499px) {
+  .tm-nav-link {
+    border-top:2px solid #3B490F;
+    border-left:2px solid #3B490F;
+    border-right:2px solid #3B490F;
+    background: #E1E6ED;
+  }
+  .tm-nav-link-last {
+    border-bottom:2px solid #3B490F;
+  }
+}
+
+/* ---------- END : tm-nav-link -----------*/
+
 
 .logo {
   width: 60px;
@@ -237,6 +292,11 @@ a:focus {
 
 .tm-hero-title {
   font-size: 3.5rem;
+  text-shadow: 2px 2px 2px #333;
+}
+
+.tm-hero-subtitle {
+  /*text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;*/
   text-shadow: 2px 2px 2px #333;
 }
 
@@ -495,7 +555,7 @@ figure.effect-honey:hover i {
 }
 
 .tm-underline {
-  border-top: 2px solid white;
+  border-top: 2px solid black;
   height: 8px;
   width: 100%;
 }
@@ -503,7 +563,7 @@ figure.effect-honey:hover i {
 .tm-underline-inner {
   width: 25%;
   height: 8px;
-  background: white;
+  background: black;
 }
 
 .tm-contact-item {
@@ -517,7 +577,7 @@ figure.effect-honey:hover i {
 
 .tm-contact-item-link i,
 .tm-contact-item-link span {
-  color: white;
+  color: black;
   transition: all 0.3s ease;
 }
 
@@ -529,25 +589,25 @@ figure.effect-honey:hover i {
 .tm-input {
   padding: 8px 25px;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1px solid black;
   background: transparent;
-  color: white;
+  color: black;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: black;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: white;
+  color: black;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: white;
+  color: black;
 }
 
 .tm-btn-submit {
@@ -563,7 +623,7 @@ figure.effect-honey:hover i {
 }
 
 .tm-footer-link {
-  color: white;
+  color: black;
 }
 
 .tm-footer-link:hover,
@@ -634,19 +694,14 @@ p {
     margin-top: 0;
   }
 
-  .navbar-nav {
-    max-width: 200px;
-    text-align: right;
-  }
-
-  .navbar-collapse {
+/*  .navbar-collapse {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 3px;
-  }
+  }*/
 
   .navbar-collapse .nav-link {
-    color: #8f8f8f;
+    color: #3B490F;
   }
 }
 
