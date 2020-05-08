@@ -38,7 +38,7 @@ a:focus {
 }
 
 .tm-section-pad-top {
-  padding-top: 135px;
+  padding-top: 100px;
 }
 
 .tm-text-primary {
@@ -267,6 +267,11 @@ a:focus {
 
 /* ---------- END : tm-nav-link -----------*/
 
+#map {
+  height: 100%;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
+
 
 .logo {
   width: 60px;
@@ -297,6 +302,7 @@ a:focus {
 
 .tm-hero-subtitle {
   /*text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;*/
+  font-size: 1.3rem;
   text-shadow: 2px 2px 2px #333;
 }
 
@@ -365,8 +371,8 @@ a:focus {
 }
 
 .tm-gallery-container {
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .tm-gallery-item {
@@ -545,7 +551,7 @@ figure.effect-honey:hover i {
   /*sky 1920*1280 80% transparence format PNG*/
   /*background-image: url(https://zupimages.net/up/20/19/al1w.png);*/
 
-  background-image: url(asset_path("sky-1920x1280-80transparency.jpg"));
+  background-image: url(asset_path("sky-1920x1280-70transparency.jpg"));
   color: black;
   background-position: center;
   background-repeat: no-repeat;
