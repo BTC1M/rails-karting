@@ -312,6 +312,101 @@ div.scrolling{
 
 /*------------- END : Texte defilant ------------*/
 
+/*------------ START : Flexbox gif -----------------------------*/
+
+.mariokart-gif {
+  /*max-width: 50%;*/
+  height: 100%;
+}
+
+.questionbox-gif {
+  height: 70%;
+  margin-top: 22px;
+}
+
+.some-page-wrapper {
+  /*margin: 15px;*/
+  /*background-color: red;*/
+}
+
+.roww {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.columnn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.blue-column {
+  /*background-color: blue;*/
+  height: 120px;
+}
+
+.green-column {
+  /*background-color: green;*/
+  height: 120px;
+}
+
+/*------------ END : Flexbox gif -----------------------------*/
+
+/*------------ START : Bouncing question box -----------------*/
+
+
+.horizontally {
+ height: 100px;
+ overflow: hidden;
+ position: relative;
+}
+
+.horizontally .inner {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(40%);
+ -webkit-transform:translateX(40%);
+ transform:translateX(40%);
+ /* Apply animation to this element */
+ -moz-animation: horizontally 1.5s linear infinite alternate;
+ -webkit-animation: horizontally 1.5s linear infinite alternate;
+ animation: horizontally 1.5s linear infinite alternate;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes horizontally {
+ 0%   { -moz-transform: translateX(40%); }
+ 100% { -moz-transform: translateX(-40%); }
+}
+@-webkit-keyframes horizontally {
+ 0%   { -webkit-transform: translateX(40%); }
+ 100% { -webkit-transform: translateX(-40%); }
+}
+
+@keyframes horizontally {
+ 0%   {
+ -moz-transform: translateX(40%); /* Browser bug fix */
+ -webkit-transform: translateX(40%); /* Browser bug fix */
+ transform: translateX(40%);
+ }
+ 100% {
+ -moz-transform: translateX(-40%); /* Browser bug fix */
+ -webkit-transform: translateX(-40%); /* Browser bug fix */
+ transform: translateX(-40%);
+ }
+}
+
+
+/*------------ END : Bouncing question box -----------------*/
+
+
+
 .logo {
   width: 60px;
   height: 60px;
@@ -723,6 +818,12 @@ p {
   }
 
   .tm-intro-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tm-tarifs-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
