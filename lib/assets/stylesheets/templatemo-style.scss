@@ -272,6 +272,38 @@ a:focus {
   width: 100%;
  }
 
+
+/*------------- START : Texte defilant ------------*/
+
+div.scrolling-limit{
+  width: 1000px;
+  height: 33px;
+  background-color: #c57e7d;
+  overflow:hidden;
+  white-space:nowrap;
+
+}
+
+div.scrolling{
+  position: relative;
+  color: black;
+  -webkit-animation: scroll 12s infinite linear;;
+  -moz-animation: scroll 12s infinite linear;
+  -o-animation: scroll 12s infinite linear;
+  animation: scroll 12s infinite linear;
+}
+
+@keyframes scroll{
+    0%   {left: 500px;}
+    100% {left: -1500px;}
+}
+@-webkit-keyframes scroll{
+    0%   {left: 500px;}
+    100% {left: -950px;}
+}
+
+/*------------- END : Texte defilant ------------*/
+
 .logo {
   width: 60px;
   height: 60px;
