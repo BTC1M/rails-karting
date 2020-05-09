@@ -276,6 +276,9 @@ a:focus {
 /*------------- START : Texte defilant ------------*/
 
 div.scrolling-limit{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 1000px;
   height: 33px;
   background-color: #c57e7d;
@@ -286,6 +289,7 @@ div.scrolling-limit{
 
 div.scrolling{
   position: relative;
+  /*margin-left: auto;*/
   color: black;
   -webkit-animation: scroll 12s infinite linear;;
   -moz-animation: scroll 12s infinite linear;
