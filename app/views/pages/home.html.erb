@@ -66,22 +66,26 @@
     <div class="row">
       <div class="col-lg-6">
         <!-- <img src="img/the-town-01.jpg" alt="Image" class="img-fluid tm-intro-img" /> -->
-        <%= image_tag('img2.jpg', alt: "Image", class: "img-fluid tm-intro-img") %>
+        <div data-aos="fade-right">
+          <%= image_tag('img2.jpg', alt: "Image", class: "img-fluid tm-intro-img") %>
+        </div>
       </div>
       <div class="col-lg-6">
-        <div class="tm-intro-text-container">
-          <h2 class="tm-text-primary mb-4 tm-section-title">Accueil</h2>
-          <p class="mb-4 tm-intro-text">
-            Vous souhaitez réaliser une sortie familiale conviviale avec vos enfants ? Et si vous veniez essayer notre circuit de mini-karts électriques situé en bord de mer ?
-          </p>
-          <p class="mb-4 tm-intro-text">
-            N'attendez plus et venez découvrir cette activité où les aventuriers de plus de 3 ans pourront <strong>piloter</strong> de petits engins au cœur de l'aventure sous les yeux étonnés de leurs parents.
-          </p>
-          <p class="mb-5 tm-intro-text">
+        <div data-aos="fade-left">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Accueil</h2>
+            <p class="mb-4 tm-intro-text">
+              Vous souhaitez réaliser une sortie familiale conviviale avec vos enfants ? Et si vous veniez essayer notre circuit de mini-karts électriques situé en bord de mer ?
+            </p>
+            <p class="mb-4 tm-intro-text">
+              N'attendez plus et venez découvrir cette activité où les aventuriers de plus de 3 ans pourront <strong>piloter</strong> de petits engins au cœur de l'aventure sous les yeux étonnés de leurs parents.
+            </p>
+            <p class="mb-5 tm-intro-text">
 
-          </p>
-          <div class="tm-next">
-            <a href="#contact" class="tm-intro-text tm-btn-primary">Nous contacter</a>
+            </p>
+            <div class="tm-next">
+              <a href="#contact" class="tm-intro-text tm-btn-primary">Nous contacter</a>
+            </div>
           </div>
         </div>
       </div>
@@ -94,18 +98,22 @@
           <i class="fas fa-4x fa-car text-center tm-icon"></i>
           <h4 class="text-center tm-text-primary mb-4">Voitures</h4>
         </div>
-        <p class="ml-5 mr-5">
-          Les voiturettes électriques permettent une approche de la pratique du karting en toute sécurité : elles sont équipées d'un régulateur de vitesse. Choisissez votre bolide parmi les huit modèles différents disponibles.
-        </p>
+        <div data-aos="flip-right">
+          <p class="ml-5 mr-5">
+            Les voiturettes électriques permettent une approche de la pratique du karting en toute sécurité : elles sont équipées d'un régulateur de vitesse. Choisissez votre bolide parmi les huit modèles différents disponibles.
+          </p>
+        </div>
       </div>
     <div class="col-lg-6 mt-5 mt-lg-0">
       <div data-aos="fade-up">
         <i class="fas fa-4x fa-motorcycle text-center tm-icon"></i>
         <h4 class="text-center tm-text-primary mb-4">Motos</h4>
       </div>
-      <p class="ml-5 mr-5">
-        Deux modèles de motos sont également disponibles, et conviennent mieux aux habitués. Possibilité de monter à deux pour accompagner le frère ou la soeur.
-      </p>
+      <div data-aos="flip-right">
+        <p class="ml-5 mr-5">
+          Deux modèles de motos sont également disponibles, et conviennent mieux aux habitués. Possibilité de monter à deux pour accompagner le frère ou la soeur.
+        </p>
+      </div>
     </div>
     <!-- <div class="col-lg-4 mt-5 mt-lg-0">
       <i class="fas fa-4x fa-city text-center tm-icon"></i>
@@ -123,71 +131,77 @@
   <div class="container tm-container-gallery">
     <div class="row">
       <div class="text-center col-12">
-        <h2 class="tm-text-primary mb-4">Galerie</h2>
-        <p class="mx-auto">
-          Découvrez ci-dessous notre sélection de photos.
-        </p>
+        <div data-aos="flip-up">
+          <h2 class="tm-text-primary mb-4">Galerie</h2>
+        </div>
+        <div data-aos="flip-right">
+          <p class="mx-auto">
+            Découvrez ci-dessous notre sélection de photos.
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="row">
         <div class="col-12">
-            <div class="mx-auto tm-gallery-container">
-                <div class="grid tm-gallery">
-                  <a href="<%= asset_path('img1.jpg')%>">
-                    <figure class="effect-honey tm-gallery-item">
-                      <!-- <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid"> -->
-                      <%= image_tag('img1.jpg', alt: "Image", class: "img-fluid") %>
-                      <figcaption>
-                        <i>Cliquez pour aggrandir</i>
-                      </figcaption>
-                    </figure>
-                  </a>
-                  <a href="<%= asset_path('img6.jpg')%>">
-                    <figure class="effect-honey tm-gallery-item">
-                      <!-- <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid"> -->
-                      <%= image_tag('img6.jpg', alt: "Image", class: "img-fluid") %>
-                      <figcaption>
-                        <i>Cliquez pour aggrandir</i>
-                      </figcaption>
-                    </figure>
-                  </a>
-                  <!-- <a href="<%#= asset_path('img2.jpg')%>">
-                    <figure class="effect-honey tm-gallery-item">
-                      <%#= image_tag('img2r.jpg', alt: "Image", class: "img-fluid") %>
-                      <figcaption>
-                        <i>Cliquez pour aggrandir</i>
-                      </figcaption>
-                    </figure>
-                  </a> -->
-                  <a href="<%= asset_path('img5.jpg')%>">
-                    <figure class="effect-honey tm-gallery-item">
-                      <!-- <img src="img/gallery-tn-04.jpg" alt="Image" class="img-fluid"> -->
-                      <%= image_tag('img5r.jpg', alt: "Image", class: "img-fluid") %>
-                      <figcaption>
-                        <i>Cliquez pour aggrandir</i>
-                      </figcaption>
-                    </figure>
-                  </a>
-                  <a href="<%= asset_path('img4.jpg')%>">
-                    <figure class="effect-honey tm-gallery-item">
-                      <!-- <img src="img/gallery-tn-05.jpg" alt="Image" class="img-fluid"> -->
-                      <%= image_tag('img4r.jpg', alt: "Image", class: "img-fluid") %>
-                      <figcaption>
-                        <i>Cliquez pour aggrandir</i>
-                      </figcaption>
-                    </figure>
-                  </a>
-                  <a href="<%= asset_path('img3.jpg')%>">
-                    <figure class="effect-honey tm-gallery-item">
-                      <!-- <img src="img/gallery-tn-06.jpg" alt="Image" class="img-fluid"> -->
-                      <%= image_tag('img3.jpg', alt: "Image", class: "img-fluid") %>
-                      <figcaption>
-                        <i>Cliquez pour aggrandir</i>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </div>
+            <div data-aos="zoom-in-up">
+              <div class="mx-auto tm-gallery-container">
+                  <div class="grid tm-gallery">
+                    <a href="<%= asset_path('img1.jpg')%>">
+                      <figure class="effect-honey tm-gallery-item">
+                        <!-- <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid"> -->
+                        <%= image_tag('img1.jpg', alt: "Image", class: "img-fluid") %>
+                        <figcaption>
+                          <i>Cliquez pour aggrandir</i>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a href="<%= asset_path('img6.jpg')%>">
+                      <figure class="effect-honey tm-gallery-item">
+                        <!-- <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid"> -->
+                        <%= image_tag('img6.jpg', alt: "Image", class: "img-fluid") %>
+                        <figcaption>
+                          <i>Cliquez pour aggrandir</i>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <!-- <a href="<%#= asset_path('img2.jpg')%>">
+                      <figure class="effect-honey tm-gallery-item">
+                        <%#= image_tag('img2r.jpg', alt: "Image", class: "img-fluid") %>
+                        <figcaption>
+                          <i>Cliquez pour aggrandir</i>
+                        </figcaption>
+                      </figure>
+                    </a> -->
+                    <a href="<%= asset_path('img5.jpg')%>">
+                      <figure class="effect-honey tm-gallery-item">
+                        <!-- <img src="img/gallery-tn-04.jpg" alt="Image" class="img-fluid"> -->
+                        <%= image_tag('img5r.jpg', alt: "Image", class: "img-fluid") %>
+                        <figcaption>
+                          <i>Cliquez pour aggrandir</i>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a href="<%= asset_path('img4.jpg')%>">
+                      <figure class="effect-honey tm-gallery-item">
+                        <!-- <img src="img/gallery-tn-05.jpg" alt="Image" class="img-fluid"> -->
+                        <%= image_tag('img4r.jpg', alt: "Image", class: "img-fluid") %>
+                        <figcaption>
+                          <i>Cliquez pour aggrandir</i>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a href="<%= asset_path('img3.jpg')%>">
+                      <figure class="effect-honey tm-gallery-item">
+                        <!-- <img src="img/gallery-tn-06.jpg" alt="Image" class="img-fluid"> -->
+                        <%= image_tag('img3.jpg', alt: "Image", class: "img-fluid") %>
+                        <figcaption>
+                          <i>Cliquez pour aggrandir</i>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </div>
+              </div>
             </div>
         </div>
       </div>
@@ -201,26 +215,32 @@
 
     <div class="row mb-5">
       <div class="col-lg-3 text-center mb-5">
-        <%= image_tag('img11.jpg', alt: "Image", class: "img-fluid tm-intro-img") %>
+        <div data-aos="zoom-in-right">
+          <%= image_tag('img11.jpg', alt: "Image", class: "img-fluid tm-intro-img") %>
+        </div>
       </div>
       <div class="col-lg-5 mb-4">
-        <p>
-          Le circuit acueille les enfants entre 3 ans et demi et 10 ans. A proximité, un grand parking est à votre disposition.
-        </p>
-        <p>
-          <U>Horaires d'ouvertures</U> <br>
-          - Avril, Mai, Juin : Tous les jours 14h30 - 19h00 <br>
-          - Juillet, Août : Tous les jours 10h30 - 12h30  /  16h00 - 22h30 <br>
-          - Septembre : Tous les jours 14h30 - 19h00 <br>
-          - Octobre à Mars : Ouvert pendant les week-ends, jours fériés, et vacances scolaires 14h30 - 19h00
-        </p>
+        <div data-aos="flip-up">
+          <p>
+            Le circuit acueille les enfants entre 3 ans et demi et 10 ans. A proximité, un grand parking est à votre disposition.
+          </p>
+          <p>
+            <U>Horaires d'ouvertures</U> <br>
+            - Avril, Mai, Juin : Tous les jours 14h30 - 19h00 <br>
+            - Juillet, Août : Tous les jours 10h30 - 12h30  /  16h00 - 22h30 <br>
+            - Septembre : Tous les jours 14h30 - 19h00 <br>
+            - Octobre à Mars : Ouvert pendant les week-ends, jours fériés, et vacances scolaires 14h30 - 19h00
+          </p>
+        </div>
       </div>
       <div class="col-lg-4" style="text-align: center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1448.9886331507676!2d6.7703382!3d43.4193017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97954988ffaf%3A0xe1a4c8f35f7d633!2sMini%20circuit%20pour%20Kartings%20enfants!5e0!3m2!1sfr!2sfr!4v1588957858609!5m2!1sfr!2sfr" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <!-- <div id="map"></div>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=<%#=ENV['GOOGLE_API_KEY']%>&callback=initMap">
-        </script> -->
+        <div data-aos="zoom-in-left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1448.9886331507676!2d6.7703382!3d43.4193017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97954988ffaf%3A0xe1a4c8f35f7d633!2sMini%20circuit%20pour%20Kartings%20enfants!5e0!3m2!1sfr!2sfr!4v1588957858609!5m2!1sfr!2sfr" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <!-- <div id="map"></div>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=<%#=ENV['GOOGLE_API_KEY']%>&callback=initMap">
+          </script> -->
+        </div>
       </div>
     </div>
 
@@ -232,9 +252,11 @@
   <div class="container tm-container-contact">
     <div class="row">
         <div class="col-12">
-          <h2 class="mb-4 tm-section-title">Nous contacter</h2>
-          <div class="mb-5 tm-underline">
-            <div class="tm-underline-inner"></div>
+          <div data-aos="zoom-out-up">
+            <h2 class="mb-4 tm-section-title">Nous contacter</h2>
+            <div class="mb-5 tm-underline">
+              <div class="tm-underline-inner"></div>
+            </div>
           </div>
           <p class="mb-5">
             <br>
