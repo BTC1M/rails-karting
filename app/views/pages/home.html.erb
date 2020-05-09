@@ -35,17 +35,20 @@
 
   <div class="text-center tm-hero-text-container">
     <div class="tm-hero-text-container-inner">
-        <h2 class="tm-hero-title">Mini circuit électrique</h2>
-        <p class="tm-hero-subtitle">
-          <br>
-          <strong>Saint-Raphaël</strong>
-          <br>
-        </p>
+      <h2 class="tm-hero-title">Mini circuit électrique</h2>
+      <p class="tm-hero-subtitle">
+        <br>
+        <strong>Saint-Raphaël</strong>
+        <br>
+      </p>
+
+      <% if Time.now.strftime("%d").to_i<=11 && Time.now.strftime("%m").to_i<=05 && Time.now.strftime("%Y").to_i<=2020 %>
         <div class="scrolling-limit">
           <div class="scrolling">
-            Bonjour à tous, le circuit sera ouvert tous les jours à partir du 11 mai 14h30. Du gel hydroalcoolique sera à disposition pour les enfants. Les véhicules seront désinfectés le plus souvent possible. A très bientôt !
+            Bonjour à tous, le circuit sera ouvert tous les jours à partir du <strong>11 mai</strong> à 14h30. Du gel hydroalcoolique sera à disposition pour les enfants. Les véhicules seront désinfectés le plus souvent possible. A très bientôt !
           </div>
         </div>
+      <% end %>
 
     </div>
   </div>
