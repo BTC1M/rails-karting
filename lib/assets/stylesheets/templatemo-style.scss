@@ -283,8 +283,9 @@ div.scrolling-limit{
   width: 1000px;
   height: 36px;
   background-color: #c57e7d;
-  border: 1px solid black;
-  border-radius: 25px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  /*border-radius: 25px;*/
   overflow:hidden;
   white-space:nowrap;
 
