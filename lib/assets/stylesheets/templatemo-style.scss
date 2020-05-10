@@ -350,14 +350,25 @@ div.scrolling{
 .mariokart2-gif {
   /*max-width: 50%;*/
   height: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 53px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mariokart2-gif {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 991px) {
   .mariokart2-gif {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    margin-top: 53px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .questionbox-gif {
@@ -527,19 +538,33 @@ div.scrolling{
   /*margin-left: 65px*/
 }
 
+.tm-intro-text {
+    text-align: center;
+  }
+
+.tm-sous-intro-text {
+    text-align: center;
+  }
+
+@media (min-width: 1200px) {
+  .tm-section-title {
+    margin-left: 18%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tm-section-title {
+    margin-left: 15%;
+  }
+}
+
+
 @media (max-width: 991px) {
   .tm-section-title {
     /*margin-left: 15px;*/
     text-align: center;
   }
 
-  .tm-intro-text {
-    text-align: center;
-  }
-
-  .mariokart-gif {
-    text-align: center;
-  }
 }
 
 .tm-intro-text {
