@@ -350,9 +350,14 @@ div.scrolling{
 .mariokart2-gif {
   /*max-width: 50%;*/
   height: 140px;
+}
+
+@media (max-width: 991px) {
+  .mariokart2-gif {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
 }
 
 .questionbox-gif {
