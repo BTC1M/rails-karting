@@ -6,8 +6,8 @@
       <div class="tm-next">
         <%= link_to '#accueil' do %>
           <%= image_tag('logo1.png', class: "navbar-brand logo") %>
-          <%= image_tag('img9.jpg', class: "navbar-brand logo-etire") %>
-          <%= image_tag('img10.png', class: "navbar-brand logo logo-masque") %>
+          <%= image_tag('img9.jpg', class: "navbar-brand logo-etire logo-circuit-masque") %>
+          <%= image_tag('img10.png', class: "navbar-brand logo logo-voiture-masque") %>
         <% end %>
       </div>
 
@@ -37,7 +37,7 @@
     <div class="tm-hero-text-container-inner">
       <h2 class="tm-hero-title">Mini circuit électrique</h2>
       <p class="tm-hero-subtitle">
-        <!-- <br> -->
+        <br>
         <strong>Saint-Raphaël</strong>
         <!-- <br> -->
       </p>
@@ -63,32 +63,29 @@
 
 <section id="infos" class="tm-section-pad-top">
   <div class="container">
+    <div data-aos="fade-right">
+      <h2 class="tm-text-primary mb-4 tm-section-title">Accueil</h2>
+    </div>
     <div class="row">
       <div class="col-lg-6">
-        <!-- <img src="img/the-town-01.jpg" alt="Image" class="img-fluid tm-intro-img" /> -->
         <div data-aos="fade-right">
-          <%= image_tag('img2.jpg', alt: "Image", class: "img-fluid tm-intro-img") %>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div data-aos="fade-left">
           <div class="tm-intro-text-container">
-            <h2 class="tm-text-primary mb-4 tm-section-title">Accueil</h2>
             <p class="mb-4 tm-intro-text">
-              Vous souhaitez réaliser une sortie conviviale avec vos enfants ? Et si vous veniez essayer notre circuit de mini-karts électriques ?
+              Vous souhaitez réaliser une sortie conviviale avec vos enfants ? Et si vous veniez essayer notre circuit de mini-karts électriques situé en bord de mer ?
             </p>
-            <p class="mb-4 tm-intro-text">
+            <p class="mb-5 tm-intro-text">
               N'attendez plus et venez découvrir cette activité où les aventuriers de plus de 3 ans pourront <strong>piloter</strong> de petits engins au cœur de l'aventure sous les yeux étonnés de leurs parents.
             </p>
-            <div class='some-page-wrapper'>
+            <%= image_tag('mariokart.gif', alt: "Image", class: "mariokart2-gif mb-5") %>
+            <!-- <div class='some-page-wrapper'>
               <div class='roww'>
                 <div class='columnn'>
-                  <div class='blue-column'>
-                    <%= image_tag('mariokart.gif', alt: "Image", class: "mariokart-gif") %>
-                  </div>
+                  <div class='blue-column mb-5'> -->
+                    <%#= image_tag('mariokart.gif', alt: "Image", class: "mariokart1-gif") %>
+                  <!-- </div>
                 </div>
                 <div class='columnn'>
-                  <div class='green-column'>
+                  <div class='green-column'> -->
                     <%#= image_tag('questionbox.gif', alt: "Image", class: "questionbox-gif") %>
                     <!-- <div class="horizontally">
                       <div class="inner">
@@ -98,11 +95,18 @@
                         </button>
                       </div>
                     </div> -->
-                  </div>
+                  <!-- </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <!-- <img src="img/the-town-01.jpg" alt="Image" class="img-fluid tm-intro-img" /> -->
+        <div data-aos="fade-left">
+          <div class="tm-intro-img"></div>
+          <%#= image_tag('img2.jpg', class: "tm-intro-img") %>
         </div>
       </div>
     </div>
@@ -217,29 +221,57 @@
 <!-- Infos pratiques -->
 <section id="horaires" class="tm-section-pad-top">
   <div class="container">
-    <h2 class="text-center col-12 tm-text-primary mb-5">Informations pratiques</h2>
-
-    <div class="row mb-5">
-      <div class="col-lg-3 text-center mb-5">
+    <h2 class="text-center col-12 tm-text-primary mb-4">Informations pratiques</h2>
+    <p class="text-center mb-3">
+      Le circuit acueille les enfants entre 3 ans et demi et 10 ans. A proximité, un grand parking est à votre disposition.
+    </p>
+    <div class="row mb-5 mt-4">
+      <div class="col-lg-3 text-center mb-4">
         <div data-aos="zoom-in-right">
           <%= image_tag('img11.jpg', alt: "Image", class: "img-fluid tm-tarifs-img") %>
         </div>
       </div>
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-6 mb-4">
         <div data-aos="flip-up">
-          <p>
-            Le circuit acueille les enfants entre 3 ans et demi et 10 ans. A proximité, un grand parking est à votre disposition.
-          </p>
-          <p>
-            <U>Horaires d'ouvertures</U> <br>
-            - Avril, Mai, Juin : Tous les jours 14h30 - 19h00 <br>
-            - Juillet, Août : Tous les jours 10h30 - 12h30  /  16h00 - 22h30 <br>
-            - Septembre : Tous les jours 14h30 - 19h00 <br>
-            - Octobre à Mars : Ouvert pendant les week-ends, jours fériés, et vacances scolaires 14h30 - 19h00
-          </p>
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col" style="color: #3496D8;">Horaires d'ouvertures</th>
+                <th scope="col" class="align-middle">Quand ?</th>
+                <th scope="col" class="align-middle">Matin</th>
+                <th scope="col" class="align-middle">Après-midi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Avril ➔ Juin</th>
+                <td>Tous les jours</td>
+                <td><i class="fas fa-times"></i></td>
+                <td>14h30 - 19h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Juillet ➔ Août</th>
+                <td>Tous les jours</td>
+                <td>10h30 - 12h30</td>
+                <td>14h30 - 19h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Septembre</th>
+                <td>Tous les jours</td>
+                <td><i class="fas fa-times"></i></td>
+                <td>14h30 - 19h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Octobre ➔ Mars</th>
+                <td>Week-ends + jours fériés + vacances scolaires</td>
+                <td><i class="fas fa-times"></i></td>
+                <td>14h30 - 19h00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div class="col-lg-4" style="text-align: center">
+      <div class="col-lg-3" style="text-align: center">
         <div data-aos="zoom-in-left">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1448.9886331507676!2d6.7703382!3d43.4193017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97954988ffaf%3A0xe1a4c8f35f7d633!2sMini%20circuit%20pour%20Kartings%20enfants!5e0!3m2!1sfr!2sfr!4v1588957858609!5m2!1sfr!2sfr" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <!-- <div id="map"></div>
