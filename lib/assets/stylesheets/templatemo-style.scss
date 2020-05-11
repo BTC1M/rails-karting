@@ -478,7 +478,7 @@ div.scrolling{
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -90px;
+  margin-top: -60px;
 }
 
 .tm-hero-title {
@@ -494,7 +494,14 @@ div.scrolling{
 
 .tm-intro-next {
   position: absolute;
-  bottom: 100px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+
+.message-defilant {
+  position: absolute;
+  bottom: 185px;
   left: 0;
   right: 0;
 }
@@ -503,9 +510,20 @@ div.scrolling{
   .tm-hero-text-container-inner {
     margin-top: -40px;
   }
-
+  .message-defilant {
+    bottom: 110px;
+  }
   .tm-intro-next {
-    bottom: 20px;
+    bottom: 15px;
+  }
+}
+
+@media (min-height: 480px) and (max-height: 560px) {
+  .message-defilant {
+    bottom: 150px;
+  }
+  .tm-intro-next {
+    bottom: 40px;
   }
 }
 
