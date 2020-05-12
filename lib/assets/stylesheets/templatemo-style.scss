@@ -323,19 +323,19 @@ div.scrolling{
   /*margin-left: auto;*/
   color: black;
   font-size: 17px;
-  -webkit-animation: scroll 12s infinite linear;;
-  -moz-animation: scroll 12s infinite linear;
-  -o-animation: scroll 12s infinite linear;
-  animation: scroll 12s infinite linear;
+  -webkit-animation: scroll 17s infinite linear;;
+  -moz-animation: scroll 17s infinite linear;
+  -o-animation: scroll 17s infinite linear;
+  animation: scroll 17s infinite linear;
 }
 
 @keyframes scroll{
-    0%   {left: 500px;}
-    100% {left: -1500px;}
+    0%   {left: 600px;}
+    100% {left: -1800px;}
 }
 @-webkit-keyframes scroll{
-    0%   {left: 500px;}
-    100% {left: -950px;}
+    0%   {left: 600px;}
+    100% {left: -1800px;}
 }
 
 /*------------- END : Texte defilant ------------*/
@@ -954,6 +954,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 285px;
   }
 
   .tm-btn-submit {
