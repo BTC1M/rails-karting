@@ -356,6 +356,11 @@ div.scrolling{
   margin-top: 53px;
 }
 
+.mariokart2-gif:hover {
+  /*border: 1px solid black;*/
+  box-shadow: 5px 5px 2px 1px rgba(0,0,255,.2);
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .mariokart2-gif {
     margin-top: 0px;
@@ -371,13 +376,13 @@ div.scrolling{
   }
 }
 
-.questionbox-gif {
+/*.questionbox-gif {
   height: 35%;
   display: block;
   margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .some-page-wrapper {
   /*margin: 15px;*/
