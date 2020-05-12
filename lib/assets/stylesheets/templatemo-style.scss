@@ -933,6 +933,16 @@ p {
   margin-right: auto;
 }
 
+.tm-tarifs-img {
+  height: 285px;
+}
+
+@media (min-width: 1200px) {
+  .tableau-horaires {
+    padding-left: 0px
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .tm-intro-img {
     width: 92%;
@@ -959,7 +969,6 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 285px;
   }
 
   .tm-btn-submit {
