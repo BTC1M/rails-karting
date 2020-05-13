@@ -1,5 +1,5 @@
 meta_product_name: "Mini circuit electrique"
 meta_title: "Mini circuit de voitures electriques pour enfants - Saint-Raphaël"
 meta_description: "Découvrez notre mini circuit de voiturette électriques pour enfants sur le bord de mer de Saint-Raphaël"
-meta_image: "img6.jpg" # should exist in `app/assets/images/`
+meta_image: "og-image.png" # 1200x630
 # twitter_account: "@product_twitter_account"   # required for Twitter Cards
