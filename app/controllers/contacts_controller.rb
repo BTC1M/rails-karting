@@ -11,9 +11,9 @@ class ContactsController < ApplicationController
     @contact.request = request
     # if verify_recaptcha && @contact.deliver
     if @contact.deliver
-      redirect_to root_path, flash: { notice: "Merci pour votre message ! Nous vous recontacterons au plus vite" }
+      redirect_to "/#contact", flash: { notice: "Merci pour votre message ! Nous vous recontacterons au plus vite" }
     else
-      redirect_to root_path, alert: { notice: "Le message n'a pas pu être envoyé" }
+      redirect_to "/#contact", alert: { notice: "Le message n'a pas pu être envoyé" }
     end
   end
 
