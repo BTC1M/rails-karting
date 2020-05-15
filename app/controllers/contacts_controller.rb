@@ -13,7 +13,7 @@ class ContactsController < ApplicationController
     if @contact.deliver
       redirect_to "/#contact", flash: { notice: "Merci pour votre message ! Nous vous recontacterons au plus vite" }
     else
-      redirect_to "/#contact", alert: { alert: "Le message n'a pas pu être envoyé" }
+      redirect_to "/#contact", flash: { alert: "Le message n'a pas pu être envoyé" }
     end
   end
 
