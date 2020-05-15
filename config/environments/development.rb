@@ -45,9 +45,11 @@ Rails.application.configure do
     domain: "gmail.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["USERNAME"],
-    password: ENV["PASSWORD"]
+    user_name: "zboubytheking01@gmail.com",
+    password: "abcdef16"
   }
+
+  # Attention a bien ecrire le username et le password sans les double quote dans le .env
 
   # Gmail : address: "smtp.gmail.com" / port : 587
   # Yahoo : address: "smtp.mail.yahoo.com" / port : 465
