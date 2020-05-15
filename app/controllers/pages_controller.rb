@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def home
     @contact = Contact.new
-    # ContactMailer.contact().deliver
+    # ContactMailer.contact("hello").deliver
   end
 
   # def send_contact
