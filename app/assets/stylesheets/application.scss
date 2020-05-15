@@ -22,10 +22,17 @@
  *
  */
 
+
+// External libraries
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+// Your CSS partials
 @import "components/alert";
+
+.to-hero-title {
+  color: red;
+}
 
 // Bug de front lorsqu'on importe bootstrap
 // @import "bootstrap";

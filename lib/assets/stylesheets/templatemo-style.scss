@@ -3,6 +3,13 @@ The Town
 https://templatemo.com/tm-525-the-town
 */
 
+.alert {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+}
+
 html {
   font-size: 18px;
 }
