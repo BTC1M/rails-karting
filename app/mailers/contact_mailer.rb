@@ -1,9 +1,9 @@
 class ContactMailer < ApplicationMailer
-  default from: "from@example.com"
+  default from: "zboubytheking01@gmail.com"
 
   def contact(message)
     @message = message
-    mail(to: 'francky1601@yahoo.com', subject: 'Test')
+    mail(to: 'zboubytheking01@gmail.com', subject: 'Test')
   end
 
 end

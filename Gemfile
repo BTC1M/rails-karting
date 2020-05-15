@@ -9,6 +9,9 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
 
+gem 'simple_form'
+gem 'mail_form'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use Puma as the app server
