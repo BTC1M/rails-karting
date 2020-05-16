@@ -45,8 +45,8 @@ Rails.application.configure do
     domain: "gmail.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["MAIL_USERNAME"],
-    password: ENV["MAIL_PASSWORD"]
+    user_name: ENV["GMAIL_SMTP_USER"],
+    password: ENV["GMAIL_SMTP_PASSWORD"]
   }
 
   # Ne jamais ecrire ENV["USERNAME"] car variable d'environnement déja définie
