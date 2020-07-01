@@ -339,19 +339,21 @@ div.scrolling{
   /*margin-left: auto;*/
   color: black;
   font-size: 17px;
-  -webkit-animation: scroll 17s infinite linear;;
-  -moz-animation: scroll 17s infinite linear;
-  -o-animation: scroll 17s infinite linear;
-  animation: scroll 17s infinite linear;
+  -webkit-animation: scroll 9s infinite linear;;
+  -moz-animation: scroll 9s infinite linear;
+  -o-animation: scroll 9s infinite linear;
+  animation: scroll 9s infinite linear;
 }
 
+// 9 secondes pour parcourir de la droite (900px) à la gauche (-500px) relatif au bord de gauche
+
 @keyframes scroll{
-    0%   {left: 600px;}
-    100% {left: -1800px;}
+    0%   {left: 900px;}
+    100% {left: -500px;}
 }
 @-webkit-keyframes scroll{
-    0%   {left: 600px;}
-    100% {left: -1800px;}
+    0%   {left: 900px;}
+    100% {left: -500px;}
 }
 
 /*------------- END : Texte defilant ------------*/
